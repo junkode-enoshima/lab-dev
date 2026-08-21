@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Lab - Maria Lazara</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="nav-title">DevOps Lab</h1>
+                <div class="nav-menu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">Sobre</a>
+                    <a href="#docker" class="nav-link">Docker</a>
+                    <a href="#aws" class="nav-link">AWS</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1 class="hero-title">grats, the site is up.</h1>
+                <p class="hero-subtitle">learning DevOps with Docker and AWS</p>
+                <div class="hero-buttons">
+                    <button class="btn primary" onclick="showStatus()">Container Status</button>
+                    <button class="btn secondary" onclick="showInfo()">Info</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>lab goal</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Docker</h3>
+                        <p>containerization and portability</p>
+                    </div>
+                    <div class="card">
+                        <h3>ECR</h3>
+                        <p>cloud Docker images management</p>
+                    </div>
+                    <div class="card">
+                        <h3>EC2</h3>
+                        <p>app's manual deploy on instance</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="status" class="section">
+            <div class="container">
+                <h2>Status</h2>
+                <div class="status-grid">
+                    <div class="status-item">
+                        <span class="status-label">Container:</span>
+                        <span class="status-value active" id="container-status">Active</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Server:</span>
+                        <span class="status-value active" id="server-status">Nginx running</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Environment:</span>
+                        <span class="status-value" id="environment">EC2</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Fernando L - DevOps showcase repository</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
